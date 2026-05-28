@@ -304,7 +304,7 @@ Filters run at two stages:
 The system relies entirely on the Grok-based transformer to learn relevance from user engagement sequences. No manual feature engineering for content relevance. This significantly reduces the complexity in our data pipelines and serving infrastructure.
 
 ### 2. Candidate Isolation in Ranking
-During transformer inference, candidates cannot attend to each other—only to the user context. This ensures the score for a post doesn't depend on which other posts are in the batch, making scores consistent and cacheable.
+During transformer inference, candidates cannot attend to each other, only to the user context. This ensures the score for a post doesn't depend on which other posts are in the batch, making scores consistent and cacheable.
 
 ### 3. Hash-Based Embeddings
 Both retrieval and ranking use multiple hash functions for embedding lookup
@@ -322,4 +322,8 @@ The `candidate-pipeline` crate provides a flexible framework for building recomm
 
 ## License
 
-This project is licensed under the Apache License 2.0. See [LICENSE](LICENSE) for details.
+MIT, see [LICENSE](LICENSE).
+
+## Contributing
+
+PRs welcome. Please open an issue first for major changes.
